@@ -160,7 +160,7 @@ def feval_pearsonr(y_pred, lgb_train):
 
 def run():    
     params = {
-        'learning_rate':0.05,
+        'learning_rate':0.5,
         "objective": "regression",
         "metric": "rmse",
         'boosting_type': "gbdt",
@@ -172,8 +172,8 @@ def run():
         'num_leaves': 108, 
         'feature_fraction': 0.5298125662824026, 
         'bagging_fraction': 0.7279540797730281, 
-        'bagging_freq': 6, 
-        'max_depth': 10, 
+        'bagging_freq': 9, 
+        'max_depth': 40, 
         'max_bin': 487, 
         'min_data_in_leaf': 158,
         'n_estimators': 1000, 
